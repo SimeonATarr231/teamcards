@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LFA First Division — Club Index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app-wrapper">
+      <header class="site-header">
+        <div class="header-top">
+          <div class="header-brand">
+            <span class="league-badge">🇱🇷</span>
+            <div class="brand-text">
+              <span class="site-label">LFA FIRST DIVISION</span>
+              <span class="site-sublabel"
+                >Liberia Football Association — Club Index</span
+              >
+            </div>
+          </div>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            ☀
+          </button>
+        </div>
+
+        <div class="header-controls">
+          <input
+            type="text"
+            class="search-input"
+            id="searchInput"
+            placeholder="Search clubs..."
+            autocomplete="off"
+          />
+          <div class="filter-strip" id="filterStrip">
+            <button class="filter-btn is-active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="1940s">1940s</button>
+            <button class="filter-btn" data-filter="1950s">1950s</button>
+            <button class="filter-btn" data-filter="1960s">1960s</button>
+            <button class="filter-btn" data-filter="1970s">1970s</button>
+            <button class="filter-btn" data-filter="1990s+">1990s+</button>
+          </div>
+        </div>
+
+        <div class="header-meta">
+          <span class="result-count" id="resultCount">10 clubs</span>
+          <span class="favorites-count" id="favoritesCount">♥ 0 saved</span>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="club-grid" id="clubGrid">
+          <!-- Club cards injected by JavaScript -->
+        </div>
+        <div class="empty-state" id="emptyState" hidden>
+          <span class="empty-icon">⌖</span>
+          <span class="empty-text">No clubs match your search.</span>
+        </div>
+      </main>
+
+      <!-- DETAIL PANEL -->
+      <aside class="detail-panel" id="detailPanel" hidden>
+        <button
+          class="panel-close"
+          id="panelClose"
+          aria-label="Close detail panel"
+        >
+          ✕
+        </button>
+
+        <div class="panel-header">
+          <span class="panel-badge" id="panelBadge"></span>
+          <div class="panel-title-block">
+            <h2 class="panel-club-name" id="panelClubName"></h2>
+            <span class="panel-nickname" id="panelNickname"></span>
+          </div>
+        </div>
+
+        <div class="panel-stats">
+          <div class="stat-block">
+            <span class="stat-number" id="panelTitles"></span>
+            <span class="stat-label">League Titles</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-number" id="panelFounded"></span>
+            <span class="stat-label">Founded</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-number" id="panelEra"></span>
+            <span class="stat-label">Peak Era</span>
+          </div>
+        </div>
+
+        <div class="panel-section">
+          <span class="panel-section-label">Home Ground</span>
+          <span class="panel-section-value" id="panelStadium"></span>
+        </div>
+
+        <div class="panel-section">
+          <span class="panel-section-label">Full Name</span>
+          <span class="panel-section-value" id="panelFullName"></span>
+        </div>
+
+        <div class="panel-section">
+          <span class="panel-section-label">Title Years</span>
+          <span class="panel-section-value" id="panelTitleYears"></span>
+        </div>
+
+        <div class="panel-section">
+          <span class="panel-section-label">Club History</span>
+          <p class="panel-section-value panel-note" id="panelNote"></p>
+        </div>
+
+        <div class="panel-section">
+          <span class="panel-section-label">Notable</span>
+          <p class="panel-section-value panel-note" id="panelNotable"></p>
+        </div>
+      </aside>
+
+      <div class="panel-overlay" id="panelOverlay" hidden></div>
+
+      <footer class="site-footer">
+        <div class="footer-left">
+          <span class="footer-brand">LFA FIRST DIVISION</span>
+          <span class="footer-meta">Club Index &mdash; v1.0</span>
+          <span class="footer-legal"
+            >&copy; 2025 Tarr. All rights reserved.</span
+          >
+        </div>
+        <div class="footer-right">
+          <span class="footer-credit">Designed &amp; Built by</span>
+          <a
+            class="footer-name"
+            href="https://github.com/SimeonATarr231"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Simeon Aseon Tarr</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

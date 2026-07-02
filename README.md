@@ -8,7 +8,7 @@ Cards project.
 
 ## Live Demo
 
-[View Live](https://simeonatarr231.github.io/teamcards)
+[View Live](https://simeonatarr231.github.io/teamcards/)
 
 ---
 

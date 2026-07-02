@@ -1,9 +1,4 @@
-/* ============================================
-   LFA FIRST DIVISION — REDESIGN
-   Colors: Liberian flag — red, white, blue
-   No per-card color chaos. Clean. National.
-   ============================================ */
-
+/* DESIGN SYSTEM */
 [data-theme="dark"] {
   --color-bg:        #080C14;
   --color-surface:   #0F1520;
@@ -68,10 +63,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* ============================================
-   LAYOUT
-   ============================================ */
-
+/* LAYOUT */
 .app-wrapper {
   max-width: 960px;
   margin: 0 auto;
@@ -81,10 +73,7 @@ a:hover { text-decoration: underline; }
   gap: var(--space-8);
 }
 
-/* ============================================
-   HEADER — football programme cover feel
-   ============================================ */
-
+/* HEADER */
 .site-header {
   display: flex;
   flex-direction: column;
@@ -145,10 +134,7 @@ a:hover { text-decoration: underline; }
   color: var(--color-red);
 }
 
-/* ============================================
-   CONTROLS
-   ============================================ */
-
+/* CONTROLS */
 .header-controls {
   display: flex;
   flex-direction: column;
@@ -222,20 +208,14 @@ a:hover { text-decoration: underline; }
   color: var(--color-red);
 }
 
-/* ============================================
-   CLUB GRID — fixed two columns, no chaos
-   ============================================ */
-
+/* CLUB GRID */
 .club-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-4);
 }
 
-/* ============================================
-   CLUB CARD
-   ============================================ */
-
+/* CLUB CARD */
 .club-card {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -385,10 +365,7 @@ a:hover { text-decoration: underline; }
   flex-shrink: 0;
 }
 
-/* ============================================
-   DETAIL PANEL
-   ============================================ */
-
+/* DETAIL PANEL */
 .detail-panel {
   position: fixed;
   top: 0;
@@ -518,10 +495,7 @@ a:hover { text-decoration: underline; }
   line-height: 1.75;
 }
 
-/* ============================================
-   OVERLAY
-   ============================================ */
-
+/* OVERLAY */
 .panel-overlay {
   position: fixed;
   inset: 0;
@@ -535,10 +509,7 @@ a:hover { text-decoration: underline; }
 .panel-overlay.is-active  { display: block; }
 .panel-overlay.is-visible { opacity: 1; }
 
-/* ============================================
-   EMPTY STATE
-   ============================================ */
-
+/* EMPTY STATE */
 .empty-state {
   display: flex;
   flex-direction: column;
@@ -552,10 +523,7 @@ a:hover { text-decoration: underline; }
 .empty-icon { font-size: var(--text-3xl); color: var(--color-red); }
 .empty-text { font-size: var(--text-sm); letter-spacing: 0.08em; }
 
-/* ============================================
-   FOOTER
-   ============================================ */
-
+/* FOOTER */
 .site-footer {
   display: flex;
   align-items: flex-end;
@@ -573,10 +541,7 @@ a:hover { text-decoration: underline; }
 .footer-name { font-size: var(--text-sm); font-weight: 600; color: var(--color-red); }
 .footer-name:hover { color: var(--color-ink); text-decoration: underline; }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
-
+/* RESPONSIVE */
 @media (max-width: 600px) {
   .club-grid { grid-template-columns: 1fr; }
   .site-label { font-size: var(--text-xl); }
